@@ -12,6 +12,7 @@ jobs:
       matrix:
         image:
           - swift:5.6.2-focal
+          - swift:nightly-5.7-bionic
     container: ${{ matrix.image }}
     steps:
       - name: Install SQLite
