@@ -1,0 +1,28 @@
+name: Build and Test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        image:
+          - swift:5.6.2-focal
+    container: ${{ matrix.image }}
+    steps:
+      - name: Install SQLite
+        run: |
+          apt-get -qq update
+          apt-get -y -qq install libsqlite3-dev
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Build Swift Debug Package
+        run: swift build -c debug
+      - name: Build Swift Release Package
+        run: swift build -c release
+      - name: Run Tests
+        run: swift test

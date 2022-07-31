@@ -3,7 +3,6 @@
        align="right" width="64" height="64" />
 </h2>
 
-
 A test suite for Lighter.
 
 This is in a separate package for two reasons:
@@ -11,6 +10,9 @@ This is in a separate package for two reasons:
   (w/o switching themes and stuff).
 - to keep the Lighter download smaller, as this may contain bigger test
   databases.
+
+It actually seems to require Swift 5.7 to get the plugin lookup in dependencies
+to work (either on macOS commandline or in Xcode).
 
 
 ### Who

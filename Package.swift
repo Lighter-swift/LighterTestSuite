@@ -1,4 +1,4 @@
-// swift-tools-version:5.6
+// swift-tools-version:5.7
 
 import PackageDescription
 
@@ -23,7 +23,7 @@ var package = Package(
                              "NoSQL/CrashTestDummy.sql" ],
             resources    : [ .copy("ContactsDB.sqlite3"),
                              .copy("ContactsDB-AddView.sql") ],
-            plugins      : [ "Enlighter" ]),
+            plugins      : [ .plugin(name: "Enlighter", package: "Lighter") ]),
             
     // MARK: - Tests
     
