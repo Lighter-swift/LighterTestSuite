@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E823980B28A29D0300FEC08D /* DatabaseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E823980128A29D0300FEC08D /* DatabaseExtension.swift */; };
+		E823980C28A29D0300FEC08D /* PersonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E823980828A29D0300FEC08D /* PersonExtension.swift */; };
+		E823981328A29D5600FEC08D /* Lighter in Frameworks */ = {isa = PBXBuildFile; productRef = E823981228A29D5600FEC08D /* Lighter */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E82397F228A29CAB00FEC08D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E82397F428A29CAB00FEC08D /* libContactsTestDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libContactsTestDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E823980028A29D0300FEC08D /* ContactsDB-AddView.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ContactsDB-AddView.sql"; sourceTree = "<group>"; };
+		E823980128A29D0300FEC08D /* DatabaseExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseExtension.swift; sourceTree = "<group>"; };
+		E823980228A29D0300FEC08D /* ContactsDB.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ContactsDB.sqlite3; sourceTree = "<group>"; };
+		E823980428A29D0300FEC08D /* OtherDB-v001.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "OtherDB-v001.sql"; sourceTree = "<group>"; };
+		E823980528A29D0300FEC08D /* OtherDB-v003.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "OtherDB-v003.sql"; sourceTree = "<group>"; };
+		E823980628A29D0300FEC08D /* OtherDB-v002.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "OtherDB-v002.sql"; sourceTree = "<group>"; };
+		E823980728A29D0300FEC08D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E823980828A29D0300FEC08D /* PersonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonExtension.swift; sourceTree = "<group>"; };
+		E823980A28A29D0300FEC08D /* CrashTestDummy.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CrashTestDummy.sql; sourceTree = "<group>"; };
+		E823980D28A29D1100FEC08D /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		E823980E28A29D1100FEC08D /* Lighter.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Lighter.json; sourceTree = "<group>"; };
+		E823980F28A29D1100FEC08D /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		E823981028A29D1100FEC08D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E823981628A29DF100FEC08D /* Lighter */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Lighter; path = ../Lighter; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E82397F128A29CAB00FEC08D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E823981328A29D5600FEC08D /* Lighter in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E82397EB28A29CAB00FEC08D = {
+			isa = PBXGroup;
+			children = (
+				E823981628A29DF100FEC08D /* Lighter */,
+				E823981028A29D1100FEC08D /* README.md */,
+				E823980F28A29D1100FEC08D /* CONTRIBUTING.md */,
+				E823980D28A29D1100FEC08D /* LICENSE */,
+				E823980E28A29D1100FEC08D /* Lighter.json */,
+				E82397FE28A29CF800FEC08D /* Sources */,
+				E82397F528A29CAB00FEC08D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E82397F528A29CAB00FEC08D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E82397F428A29CAB00FEC08D /* libContactsTestDB.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E82397FE28A29CF800FEC08D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E82397FF28A29D0300FEC08D /* ContactsTestDB */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		E82397FF28A29D0300FEC08D /* ContactsTestDB */ = {
+			isa = PBXGroup;
+			children = (
+				E823980028A29D0300FEC08D /* ContactsDB-AddView.sql */,
+				E823980128A29D0300FEC08D /* DatabaseExtension.swift */,
+				E823980228A29D0300FEC08D /* ContactsDB.sqlite3 */,
+				E823980328A29D0300FEC08D /* SubDir */,
+				E823980728A29D0300FEC08D /* README.md */,
+				E823980828A29D0300FEC08D /* PersonExtension.swift */,
+				E823980928A29D0300FEC08D /* NoSQL */,
+			);
+			name = ContactsTestDB;
+			path = Sources/ContactsTestDB;
+			sourceTree = "<group>";
+		};
+		E823980328A29D0300FEC08D /* SubDir */ = {
+			isa = PBXGroup;
+			children = (
+				E823980428A29D0300FEC08D /* OtherDB-v001.sql */,
+				E823980528A29D0300FEC08D /* OtherDB-v003.sql */,
+				E823980628A29D0300FEC08D /* OtherDB-v002.sql */,
+			);
+			path = SubDir;
+			sourceTree = "<group>";
+		};
+		E823980928A29D0300FEC08D /* NoSQL */ = {
+			isa = PBXGroup;
+			children = (
+				E823980A28A29D0300FEC08D /* CrashTestDummy.sql */,
+			);
+			path = NoSQL;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E82397F328A29CAB00FEC08D /* ContactsTestDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E82397FB28A29CAB00FEC08D /* Build configuration list for PBXNativeTarget "ContactsTestDB" */;
+			buildPhases = (
+				E82397F028A29CAB00FEC08D /* Sources */,
+				E82397F128A29CAB00FEC08D /* Frameworks */,
+				E82397F228A29CAB00FEC08D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E823981528A29D9E00FEC08D /* PBXTargetDependency */,
+			);
+			name = ContactsTestDB;
+			packageProductDependencies = (
+				E823981228A29D5600FEC08D /* Lighter */,
+			);
+			productName = ContactsTestDB;
+			productReference = E82397F428A29CAB00FEC08D /* libContactsTestDB.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E82397EC28A29CAB00FEC08D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					E82397F328A29CAB00FEC08D = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = E82397EF28A29CAB00FEC08D /* Build configuration list for PBXProject "LighterTestSuite" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E82397EB28A29CAB00FEC08D;
+			packageReferences = (
+				E823981128A29D5600FEC08D /* XCRemoteSwiftPackageReference "Lighter" */,
+			);
+			productRefGroup = E82397F528A29CAB00FEC08D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E82397F328A29CAB00FEC08D /* ContactsTestDB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E82397F028A29CAB00FEC08D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E823980C28A29D0300FEC08D /* PersonExtension.swift in Sources */,
+				E823980B28A29D0300FEC08D /* DatabaseExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E823981528A29D9E00FEC08D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = E823981428A29D9E00FEC08D /* Lighter */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E82397F928A29CAB00FEC08D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E82397FA28A29CAB00FEC08D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E82397FC28A29CAB00FEC08D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GXF3JAMM4;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E82397FD28A29CAB00FEC08D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GXF3JAMM4;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E82397EF28A29CAB00FEC08D /* Build configuration list for PBXProject "LighterTestSuite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E82397F928A29CAB00FEC08D /* Debug */,
+				E82397FA28A29CAB00FEC08D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E82397FB28A29CAB00FEC08D /* Build configuration list for PBXNativeTarget "ContactsTestDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E82397FC28A29CAB00FEC08D /* Debug */,
+				E82397FD28A29CAB00FEC08D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E823981128A29D5600FEC08D /* XCRemoteSwiftPackageReference "Lighter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:55DB091A-8471-447B-8F50-5DFF4C1B14AC/Lighter.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E823981228A29D5600FEC08D /* Lighter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E823981128A29D5600FEC08D /* XCRemoteSwiftPackageReference "Lighter" */;
+			productName = Lighter;
+		};
+		E823981428A29D9E00FEC08D /* Lighter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E823981128A29D5600FEC08D /* XCRemoteSwiftPackageReference "Lighter" */;
+			productName = Lighter;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E82397EC28A29CAB00FEC08D /* Project object */;
+}
