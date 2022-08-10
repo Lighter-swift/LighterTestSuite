@@ -10,7 +10,7 @@ var package = Package(
   
   dependencies: [
     .package(url: "git@github.com:55DB091A-8471-447B-8F50-5DFF4C1B14AC/Lighter.git",
-             branch: "develop")
+             from: "1.0.0"),
   ],
   
   targets: [

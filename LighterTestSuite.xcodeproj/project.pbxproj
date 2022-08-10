@@ -530,8 +530,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:55DB091A-8471-447B-8F50-5DFF4C1B14AC/Lighter.git";
 			requirement = {
-				branch = "chore/xcode-plugin-1";
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
