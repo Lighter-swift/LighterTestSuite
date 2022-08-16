@@ -3,10 +3,10 @@
     {
       "identity" : "lighter",
       "kind" : "remoteSourceControl",
-      "location" : "git@github.com:55DB091A-8471-447B-8F50-5DFF4C1B14AC/Lighter.git",
+      "location" : "https://github.com/Lighter-swift/Lighter.git",
       "state" : {
-        "branch" : "develop",
-        "revision" : "eabcb74161cb8f2f75e3e4dc8883eb0c4a806868"
+        "revision" : "eff629d4d6a035188e43a2d07e3e7fa4fe9c910c",
+        "version" : "1.0.2"
       }
     }
   ],

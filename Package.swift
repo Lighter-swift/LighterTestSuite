@@ -6,11 +6,9 @@ var package = Package(
   name: "LighterTestSuite",
 
   platforms: [ .macOS(.v10_15), .iOS(.v13) ],
-  products: [],
   
   dependencies: [
-    .package(url: "git@github.com:55DB091A-8471-447B-8F50-5DFF4C1B14AC/Lighter.git",
-             branch: "develop")
+    .package(url: "https://github.com/Lighter-swift/Lighter.git", from: "1.0.2")
   ],
   
   targets: [
